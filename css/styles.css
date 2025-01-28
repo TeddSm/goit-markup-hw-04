@@ -247,7 +247,8 @@ nav>ul {
 }
 
 .team-cards-container {
-    padding: 32px;
+    padding: 32px 0;
+    margin:0 16px;
 }
 
 .title-team-cards {
