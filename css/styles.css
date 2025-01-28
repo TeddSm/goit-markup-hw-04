@@ -125,7 +125,7 @@ nav>ul {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7), 
         rgba(46, 47, 66, 0.7)
-        ), url(../images/hero-bg.png);
+        ), url(../images/hero-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -189,6 +189,10 @@ nav>ul {
 }
 
 .advantages-icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 112px;
     max-width: 264px;
     border: 1px solid #8e8f99;
     border-radius: 4px;
