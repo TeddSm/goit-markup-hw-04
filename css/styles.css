@@ -103,7 +103,13 @@ nav>ul {
 }
 
 .solutions {
-    background: #2e2f42;
+    background-image: linear-gradient(
+        to bottom, 
+        rgba(46, 47, 66, 0.7), 
+        rgba(46, 47, 66, 0.7)
+        ), url(../images/hero-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 188px 0;
 }
 
@@ -158,7 +164,16 @@ nav>ul {
 .advantages-list {
     display: flex;
     gap: 24px;
-    align-items: center;
+    /* align-items: center */
+}
+
+.advantages-icon-box {
+    max-width: 264px;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    background: #f4f4fd;
+    padding: 24px 100px;
+    margin-bottom: 8px;
 }
 
 .advantages-item {
@@ -200,13 +215,14 @@ nav>ul {
 }
 
 .team-cards {
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     background: #fff;
     max-width: 264px;
     border-radius: 0px 0px 4px 4px;
 }
 
 .team-cards-container {
-    padding: 32px 0;
+    padding: 32px 16px;
 }
 
 .title-team-cards {
@@ -221,6 +237,31 @@ nav>ul {
 .paragraph-team-cards {
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
+}
+
+.team-cards-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 24px;
+    max-width: 232px;
+}
+
+.team-cards-item {
+    display: flex;
+    background-image: url(../images/ellipse.svg);
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+}
+
+.team-cards-icons {
+    fill: #fff;
 }
 
 .portfolio {
@@ -282,6 +323,7 @@ nav>ul {
 }
 
 .logo-text-footer {
+    display: inline-block;
     color: #f4f4fd;
 }
 
@@ -289,4 +331,22 @@ nav>ul {
     line-height: 1.5;
     letter-spacing: 0.02em;
     max-width: 264px;
+}
+
+
+.footer-text-box {
+    display: inline-block;
+}
+
+.footer-social-box {
+    display: inline-block;
+    margin-left: 120px;
+}
+
+.footer-social-text {
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #fff;
+    margin-bottom: 16px;
 }
